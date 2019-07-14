@@ -4,12 +4,13 @@ $text-light: #a1a1a1;
 $text-dark: #333333;
 
 #homeJumbotron {
-  position: relative;
   text-align: center;
   margin: 0 !important;
-  background-image: url("../images/living_room.jpg");
+  background-image: url("../images/space_bg.png");
+  background-size: cover;
   background-position: center;
   color: #fff;
+  height: 100vh;
 
 
   .container {
