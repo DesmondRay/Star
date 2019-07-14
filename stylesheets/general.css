@@ -1,93 +1,111 @@
 /* Styles for asthetics */
 @import url("../fonts/stylesheet.css");
+@import url("normalize.css");
+@import url("_variables.scss");
+@import url("_functions.scss");
+@import url("_breakpoints.scss");
+/* Variables */
+/* General Styles */
 body {
-  font-family: proxima_nova_rgregular;
-  color: #333333; }
+  padding: 0;
+  font-family: 'Poppins', sans-serif; }
 
-a {
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
+.wide-container {
+  max-width: 1600px !important;
+  margin: 0 auto;
+  padding: 0 15px; }
 
-/* Styles for page structure */
-.container-wide {
-  margin-left: 5% !important;
-  margin-right: 5% !important; }
+h1 {
+  font-size: 3rem; }
 
-.container-md {
-  margin: 0 15% 0 15%; }
+h2 {
+  font-size: 2.2rem; }
 
-/* Styles for content structure */
-footer {
-  background: #303030;
-  color: #FFFFFF;
-  padding: 1rem;
-  text-align: center; }
+.w {
+  color: #ffffff !important; }
 
-.generic-button {
-  font-family: proxima_nova_rgbold;
-  padding: 1.5rem 2.5rem;
-  margin-right: -20px;
-  margin-top: 20px;
-  border-radius: 4px; }
+.r {
+  color: #f1340a; }
 
-.feature {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  position: relative;
-  /**  .feature-hover {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #fff;
-      opacity: 0;
-      transition: 0.8s;
-    }
-    .feature-hover:hover {
-      opacity: 1;
-    }
-    */ }
-  .feature .feature-header {
-    text-align: center; }
-    .feature .feature-header p {
-      font-size: 1.25rem;
-      font-family: proxima_novalight; }
-    .feature .feature-header h1 {
-      font-family: proxima_novablack; }
+.dg {
+  color: #555555; }
 
-.custom-card {
-  background: #fff;
-  text-align: center;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
-  padding: 0 0 4rem 0;
-  margin-bottom: 2rem; }
-  .custom-card img {
-    max-height: 200px;
-    margin: 5rem auto 0 auto; }
-  .custom-card .custom-card-text {
-    margin: 5rem 0 0 0; }
-    .custom-card .custom-card-text p {
-      margin: 0 2rem;
-      font-size: 0.97rem;
-      line-height: 1.8rem;
-      color: #a1a1a1;
-      padding: 0 2rem 0 2rem; }
-    .custom-card .custom-card-text h6 {
-      font-weight: bold; }
+/* Form Styles */
+input, select {
+  width: 100%; }
 
-.contact-feilds form input, .contact-feilds form textarea {
-  color: #a1a1a1;
-  border: 0;
-  background: #F4F4F4;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0 1rem 0;
-  border-radius: 4px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); }
-.contact-feilds form textarea {
-  min-height: 250px; }
+/* Button Styles */
+.btn {
+  padding: 1rem 2rem;
+  border: none !important;
+  border-radius: 2px;
+  font-weight: 500; }
+
+.btn-secondary {
+  background: #f1340a; }
+
+/* Information Top Bar */
+@media only screen and (max-width: 1000px) {
+  #information-bar {
+    display: none; } }
+
+.information-bar {
+  background: #f4f6fd;
+  color: #555555;
+  z-index: 2;
+  font-size: 0.87rem; }
+
+/* Navbar Styles and Jumbotron */
+#banner-navbar {
+  z-index: 1;
+  background: url("../images/banner.jpg");
+  background-size: cover; }
+  #banner-navbar h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+    width: 80%; }
+    @media only screen and (max-width: 1000px) {
+      #banner-navbar h1 {
+        width: 100% !important; } }
+  #banner-navbar h4 {
+    line-height: 2.5rem; }
+  #banner-navbar .nav-link {
+    font-weight: 600; }
+    @media only screen and (max-width: 1000px) {
+      #banner-navbar .nav-link {
+        float: right; } }
+  @media only screen and (max-width: 1000px) {
+    #banner-navbar #center-logo-navbar {
+      display: none; } }
+  #banner-navbar #mobile-navbar {
+    display: none; }
+    @media only screen and (max-width: 1000px) {
+      #banner-navbar #mobile-navbar {
+        display: flex; } }
+    #banner-navbar #mobile-navbar .navbar-toggler {
+      float: right; }
+
+@media only screen and (max-width: 1000px) {
+  #banner-content {
+    margin-top: 1rem !important; } }
+@media only screen and (max-width: 1000px) {
+  #banner-content #banner-tagline {
+    margin-bottom: 2rem; } }
+
+.banner-property-search {
+  background: rgba(0, 0, 0, 0.5); }
+  .banner-property-search h2 {
+    font-weight: 800;
+    line-height: 3.2rem; }
+  .banner-property-search span {
+    font-size: 0.9rem; }
+
+.center-brand {
+  margin: 0 auto; }
+  @media only screen and (max-width: 1000px) {
+    .center-brand {
+      display: none; } }
+
+/* Media Queries for Banner */
 
 /*# sourceMappingURL=general.css.map */
