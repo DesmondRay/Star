@@ -188,7 +188,8 @@ h2 {
 
 /* Recruitment Advertisement Styles */
 #be-a-star {
-  background: url("../images/woman.jpg"); }
+  background: url("../images/woman.jpg");
+  background-size: cover; }
 
 /* Form Styles */
 input, select {
