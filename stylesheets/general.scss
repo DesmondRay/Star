@@ -17,12 +17,16 @@
 
 $white: #ffffff;
 $red: #f1340a;
+$blue: #00afff;
 $lightgrey: #a1a1a1;
 $darkgrey: #555555;
+$black: #222222;
 
 /* General Styles */
 
+
 body {
+  overflow-x: hidden;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -53,9 +57,29 @@ h2 {
   color: $darkgrey;
 }
 
+.blk {
+  color: $black;
+}
+
 /* Form Styles */
 input, select {
   width: 100%;
+}
+
+.heading-subheading {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .title-separator {
+    height: 3px;
+    width: 60px;
+    border: none;
+  }
 }
 
 /* Button Styles */
@@ -65,10 +89,17 @@ input, select {
   border: none !important;
   border-radius: 2px;
   font-weight: 500;
+  &:hover {
+    background: #5a6268 !important;
+  }
 }
 
 .btn-secondary {
   background: $red;
+}
+
+.btn-primary {
+  background: $blue;
 }
 
 /* Information Top Bar */
@@ -94,7 +125,7 @@ input, select {
   background-size: cover;
   h1 {
     font-size: 3.75rem;
-    font-weight: 800;
+    font-weight: 600;
     width: 80%;
     @include phone {
       width: 100% !important;
@@ -143,7 +174,7 @@ input, select {
 .banner-property-search {
   background: rgba(0, 0, 0, 0.5);
   h2 {
-    font-weight: 800;
+    font-weight: 500;
     line-height: 3.2rem;
   }
   span {
@@ -156,6 +187,25 @@ input, select {
   @include phone {
     display: none;
   }
+}
+
+/* Buy / Sell Homepage Styles */
+
+#buyers-and-sellers {
+  #test_one {
+    background: $white;
+  }
+
+  #test_two {
+
+    background: #f0f0f0;
+  }
+}
+
+/* Recruitment Advertisement Styles */
+
+#be-a-star {
+  background: url('../images/banner.jpg');
 }
 
 /* Media Queries for Banner */

@@ -7,6 +7,7 @@
 /* Variables */
 /* General Styles */
 body {
+  overflow-x: hidden;
   padding: 0;
   font-family: 'Poppins', sans-serif; }
 
@@ -30,9 +31,23 @@ h2 {
 .dg {
   color: #555555; }
 
+.blk {
+  color: #222222; }
+
 /* Form Styles */
 input, select {
   width: 100%; }
+
+.heading-subheading h1 {
+  font-size: 2.5rem;
+  font-weight: 600; }
+.heading-subheading h4 {
+  font-size: 1.1rem;
+  font-weight: 500; }
+.heading-subheading .title-separator {
+  height: 3px;
+  width: 60px;
+  border: none; }
 
 /* Button Styles */
 .btn {
@@ -40,9 +55,14 @@ input, select {
   border: none !important;
   border-radius: 2px;
   font-weight: 500; }
+  .btn:hover {
+    background: #5a6268 !important; }
 
 .btn-secondary {
   background: #f1340a; }
+
+.btn-primary {
+  background: #00afff; }
 
 /* Information Top Bar */
 @media only screen and (max-width: 1000px) {
@@ -62,7 +82,7 @@ input, select {
   background-size: cover; }
   #banner-navbar h1 {
     font-size: 3.75rem;
-    font-weight: 800;
+    font-weight: 600;
     width: 80%; }
     @media only screen and (max-width: 1000px) {
       #banner-navbar h1 {
@@ -95,7 +115,7 @@ input, select {
 .banner-property-search {
   background: rgba(0, 0, 0, 0.5); }
   .banner-property-search h2 {
-    font-weight: 800;
+    font-weight: 500;
     line-height: 3.2rem; }
   .banner-property-search span {
     font-size: 0.9rem; }
@@ -105,6 +125,16 @@ input, select {
   @media only screen and (max-width: 1000px) {
     .center-brand {
       display: none; } }
+
+/* Buy / Sell Homepage Styles */
+#buyers-and-sellers #test_one {
+  background: #ffffff; }
+#buyers-and-sellers #test_two {
+  background: #f0f0f0; }
+
+/* Recruitment Advertisement Styles */
+#be-a-star {
+  background: url("../images/banner.jpg"); }
 
 /* Media Queries for Banner */
 
