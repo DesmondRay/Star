@@ -29,6 +29,9 @@ body {
   overflow-x: hidden;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  @include phone {
+    overflow-x: hidden !important;
+  }
 }
 
 .wide-container {
@@ -239,7 +242,8 @@ h2 {
 
 #buyers-and-sellers {
   #test_one {
-    background: $blue;
+    background: url('../images/buy_bg.png');
+    background-size: cover;
     background-position: center;
     .heading-subheading {
       margin-left: 30%;
