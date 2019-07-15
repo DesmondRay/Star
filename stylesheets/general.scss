@@ -61,14 +61,13 @@ h2 {
   color: $black;
 }
 
-/* Form Styles */
-input, select {
-  width: 100%;
+.b {
+  color: $blue;
 }
 
 .heading-subheading {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 600;
   }
   h4 {
@@ -79,6 +78,49 @@ input, select {
     height: 3px;
     width: 60px;
     border: none;
+  }
+
+  .dots {
+    position: relative;
+    border-radius: 20%;
+    &:before {
+      content: '';
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      position: absolute;
+      top: -1px;
+      bottom: 0;
+      left: -10px;
+      right: 0;
+      background: inherit;
+    }
+
+    &:after {
+      content: '';
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      position: absolute;
+      top: -1px;
+      bottom: 0;
+      left: 65px;
+      right: 0;
+      background: inherit;
+    }
+  }
+}
+
+.card-no-border {
+  border: none;
+  background: none;
+  width: 100%;
+  line-height: 1.8rem;
+  p {
+    font-size: 0.925rem;
+  }
+  @include phone {
+
   }
 }
 
@@ -100,6 +142,10 @@ input, select {
 
 .btn-primary {
   background: $blue;
+}
+
+.btn-light {
+  background: $white;
 }
 
 /* Information Top Bar */
@@ -193,19 +239,46 @@ input, select {
 
 #buyers-and-sellers {
   #test_one {
-    background: $white;
+    background: $blue;
+    background-position: center;
+    .heading-subheading {
+      margin-left: 30%;
+      @include phone {
+        margin-left: 15%;
+      }
+    }
   }
 
   #test_two {
-
-    background: #f0f0f0;
+    background: url('../images/sell_bg.png');
+    background-size: cover;
+    background-position: center;
+    .heading-subheading {
+      margin-right: 30%;
+      @include phone {
+        margin-right: 15%;
+      }
+    }
   }
+}
+
+/* Home Services Styles */
+
+#home-services {
+  background: url('../images/city.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 /* Recruitment Advertisement Styles */
 
 #be-a-star {
-  background: url('../images/banner.jpg');
+  background: url('../images/woman.jpg');
+}
+
+/* Form Styles */
+input, select {
+  width: 100%;
 }
 
 /* Media Queries for Banner */

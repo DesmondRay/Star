@@ -34,12 +34,11 @@ h2 {
 .blk {
   color: #222222; }
 
-/* Form Styles */
-input, select {
-  width: 100%; }
+.b {
+  color: #00afff; }
 
 .heading-subheading h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600; }
 .heading-subheading h4 {
   font-size: 1.1rem;
@@ -48,6 +47,39 @@ input, select {
   height: 3px;
   width: 60px;
   border: none; }
+.heading-subheading .dots {
+  position: relative;
+  border-radius: 20%; }
+  .heading-subheading .dots:before {
+    content: '';
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: -10px;
+    right: 0;
+    background: inherit; }
+  .heading-subheading .dots:after {
+    content: '';
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 65px;
+    right: 0;
+    background: inherit; }
+
+.card-no-border {
+  border: none;
+  background: none;
+  width: 100%;
+  line-height: 1.8rem; }
+  .card-no-border p {
+    font-size: 0.925rem; }
 
 /* Button Styles */
 .btn {
@@ -63,6 +95,9 @@ input, select {
 
 .btn-primary {
   background: #00afff; }
+
+.btn-light {
+  background: #ffffff; }
 
 /* Information Top Bar */
 @media only screen and (max-width: 1000px) {
@@ -128,13 +163,36 @@ input, select {
 
 /* Buy / Sell Homepage Styles */
 #buyers-and-sellers #test_one {
-  background: #ffffff; }
+  background: #00afff;
+  background-position: center; }
+  #buyers-and-sellers #test_one .heading-subheading {
+    margin-left: 30%; }
+    @media only screen and (max-width: 1000px) {
+      #buyers-and-sellers #test_one .heading-subheading {
+        margin-left: 15%; } }
 #buyers-and-sellers #test_two {
-  background: #f0f0f0; }
+  background: url("../images/sell_bg.png");
+  background-size: cover;
+  background-position: center; }
+  #buyers-and-sellers #test_two .heading-subheading {
+    margin-right: 30%; }
+    @media only screen and (max-width: 1000px) {
+      #buyers-and-sellers #test_two .heading-subheading {
+        margin-right: 15%; } }
+
+/* Home Services Styles */
+#home-services {
+  background: url("../images/city.jpg");
+  background-size: cover;
+  background-position: center; }
 
 /* Recruitment Advertisement Styles */
 #be-a-star {
-  background: url("../images/banner.jpg"); }
+  background: url("../images/woman.jpg"); }
+
+/* Form Styles */
+input, select {
+  width: 100%; }
 
 /* Media Queries for Banner */
 
