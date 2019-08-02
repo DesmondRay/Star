@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Styles for asthetics */
 @import url("../fonts/stylesheet.css");
 @import url("normalize.css");
@@ -329,6 +330,58 @@ input, select {
 }
 .agent-card .agent-read-more-and-social-links ul li {
   display: inline;
+}
+
+#contact-page {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+#contact-page .heading-subheading p {
+  line-height: 1.9rem;
+}
+#contact-page .heading-subheading p span {
+  font-weight: bold;
+}
+
+footer {
+  padding-top: 5rem;
+  color: #ffffff;
+  background: url("../images/city2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+footer h1 {
+  font-size: 2.3rem;
+}
+footer p {
+  font-size: 0.9rem;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li:before {
+  content: "•";
+  color: #00afff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+footer ul li a {
+  text-decoration: none !important;
+  transition: 0.3s;
+}
+footer ul li a:hover {
+  color: #00afff !important;
+}
+footer .footer-content {
+  padding-bottom: 3rem;
+}
+footer .copyright {
+  font-size: 0.85rem;
+  text-align: center;
+  border-top: 1px solid #222;
+  padding: 3rem 0;
 }
 
 /* Media Queries for Banner */

@@ -360,6 +360,7 @@ input, select {
       text-decoration: none !important;
       font-size: 0.9rem;
       font-weight: 300;
+
     }
     ul {
       list-style: none;
@@ -368,6 +369,64 @@ input, select {
         display: inline;
       }
     }
+  }
+}
+
+#contact-page {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .heading-subheading {
+    p {
+      line-height: 1.9rem;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 5rem;
+  color: $white;
+  background: url('../images/city2.jpg');
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  ul {
+    list-style: none;
+    li {
+      &:before {
+        content: "\2022";
+        color: #00afff;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      a {
+        text-decoration: none !important;
+        transition: 0.3s;
+        &:hover {
+          color: $blue !important;
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    padding-bottom: 3rem;
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+    text-align: center;
+    border-top: 1px solid #222;
+    padding: 3rem 0;
   }
 }
 
